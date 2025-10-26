@@ -15,7 +15,7 @@ Shuffled Questions: Questions are randomly selected and shuffled from a large po
 Shuffled Options: The answer options (1-4) for each question are randomized every time, ensuring you cannot memorize option positions.
 
 ### Interaction & Scoring
-One-at-a-Time Display: Questions are presented individually, keeping the focus clear.
+One at a Time Display: Questions are presented individually, keeping the focus clear.
 
 Simple Input: You enter the number corresponding to your chosen answer.
 
