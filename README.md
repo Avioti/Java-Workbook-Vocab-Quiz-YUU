@@ -1,4 +1,4 @@
-# Avi's/Jalen's Workbook Vocab Quiz
+# Jalen's Workbook Quiz App
 
 ## Vocabulary Quiz CLI App 
 A simple Command Line Interface (CLI) application built in Java to test and improve vocabulary knowledge across various difficulty levels. This app features a randomized 10-question format designed to challenge and expand your word power.
