@@ -4,6 +4,7 @@ package com.pluralsight;
 import java.util.List;
 import java.util.Scanner;
 
+import static com.pluralsight.Utility.gradualText;
 import static com.pluralsight.Utility.ifNumber;
 
 public class UserInterface {
@@ -27,7 +28,6 @@ public class UserInterface {
          */
 
 
-
     }
 
     /**
@@ -37,15 +37,18 @@ public class UserInterface {
     public void displayWelcome() {
 
         System.out.println();
-        System.out.println("+---------+---------+---------+-------+");
-        System.out.println("|                                     |");
-        System.out.println("|     WELCOME TO THE YUU QUIZ APP     |");
-        System.out.println("|                                     |");
-        System.out.println("+---------+---------+---------+-------+");
-        System.out.println("----Test your Vocabulary Knowledge!----");
-        System.out.println("-----------Chapter quizzes!!-----------");
+        String textBox =
+                "+-----------------------------------+\n" +
+                        "|                                   |\n" +
+                        "|     WELCOME TO THE YUU QUIZ APP   |\n" +
+                        "|                                   |\n" +
+                        "+-----------------------------------+\n" +
+                        "---Test your Vocabulary Knowledge!---\n" +
+                        "----------Chapter quizzes!!----------\n";
+        System.out.println(textBox);
         System.out.println();
-        System.out.print("Press Enter: ");
+        String enterText = "Press ENTER to continue...";
+        gradualText(enterText, 25);
         scanner.nextLine();
 
         displayChunkSelection();
@@ -59,14 +62,18 @@ public class UserInterface {
 
         System.out.println();
         System.out.println("Please select a Quiz Option to begin");
-        System.out.println("---------------------------------------");
-        System.out.println("1 - Easy");
-        System.out.println("2 - Medium");
-        System.out.println("3 - Hard");
-        System.out.println("4 - Chapter " + workBookChapter + " Quiz");
-        System.out.println("0 - Exit");
-        System.out.println("---------------------------------------");
-        System.out.print("Enter choice (0-4): ");
+        System.out.println("-------------------------------------");
+        String choices =
+                "1 - Easy\n" +
+                "2 - Medium\n" +
+                "3 - Hard\n" +
+                "4 - Chapter " + workBookChapter + " Quiz\n" +
+                "0 - Exit\n";
+        gradualText(choices, 25);
+        System.out.println("-------------------------------------");
+        String enterChoice = "Enter choice (0-4): ";
+        gradualText(enterChoice,30);
+
 
         menuSelection();
 
@@ -105,34 +112,22 @@ public class UserInterface {
         switch (choice) {
             case 1:
                 // Easy selected
-                System.out.println();
-                System.out.println("You selected Easy");
-                QuizData.loadData("easy");
-                confirmation();
+                choiceBlock("easy");
 
                 break;
             case 2:
                 // Medium selected
-                System.out.println();
-                System.out.println("You selected Medium");
-                QuizData.loadData("medium");
-                confirmation();
+              choiceBlock("medium");
 
                 break;
             case 3:
                 // Hard selected
-                System.out.println();
-                System.out.println("You selected Hard");
-                QuizData.loadData("hard");
-                confirmation();
+                choiceBlock("hard");
 
                 break;
             case 4:
                 // Chapter Quiz selected
-                System.out.println();
-                System.out.println("Chapter Quiz selected");
-                QuizData.loadData("chapter");
-                confirmation();
+                choiceBlock("chapter");
 
             case 0:
                 // Exit selected
@@ -142,9 +137,25 @@ public class UserInterface {
             default:
                 // Invalid selection
                 System.out.println("Number Out of Bounds . Please select a valid option.");
+                displayChunkSelection();
+                break;
         }
 
 
+    }
+
+    /**
+     * Loads the quiz data for the selected difficulty level
+     * and prompts for confirmation before starting the quiz.
+     *
+     * @param choice The selected quiz difficulty level.
+     */
+
+    public void choiceBlock(String choice) {
+        System.out.println();
+        System.out.println("You selected the " + choice + " quiz.");
+        QuizData.loadData(choice);
+        confirmation();
     }
 
     /**
@@ -184,7 +195,7 @@ public class UserInterface {
         for (String questionKey : tenQuestions) {
 
             System.out.println();
-            System.out.println("---------------------------------------");
+            System.out.println("-------------------------------------");
             System.out.println("Question " + (questionNumber++) + " of " + tenQuestions.size());
 
             // Get the data for this specific question
@@ -291,10 +302,10 @@ public class UserInterface {
 
     public void displayEnd(int score, int totalQuestions) {
         System.out.println();
-        System.out.println("---------------------------------------");
+        System.out.println("-------------------------------------");
         System.out.println("Quiz complete!");
         displayScore(score, totalQuestions);
-        System.out.println("---------------------------------------");
+        System.out.println("-------------------------------------");
 
         displayChunkSelection();
     }

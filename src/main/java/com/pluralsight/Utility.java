@@ -53,4 +53,16 @@ public class Utility {
             System.out.println("Error: Please enter a valid number.");
         }}
 
+    public static void gradualText(String text, int delay) {
+        for (char c : text.toCharArray()) {
+            System.out.print(c);
+            try {
+                Thread.sleep(delay);
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
+            }
+        }
+        System.out.println();
+    }
+
 }
