@@ -42,8 +42,8 @@ public class UserInterface {
         System.out.println("|     WELCOME TO THE YUU QUIZ APP     |");
         System.out.println("|                                     |");
         System.out.println("+---------+---------+---------+-------+");
-        System.out.println("----Test your Vocabulary Knowledge!!----");
-        System.out.println("-----------Chapter quizzes!!--------------");
+        System.out.println("----Test your Vocabulary Knowledge!----");
+        System.out.println("-----------Chapter quizzes!!-----------");
         System.out.println();
         System.out.print("Press Enter: ");
         scanner.nextLine();
@@ -59,13 +59,13 @@ public class UserInterface {
 
         System.out.println();
         System.out.println("Please select a Quiz Option to begin");
-        System.out.println("----------------------------------------------");
+        System.out.println("---------------------------------------");
         System.out.println("1 - Easy");
         System.out.println("2 - Medium");
         System.out.println("3 - Hard");
         System.out.println("4 - Chapter " + workBookChapter + " Quiz");
         System.out.println("0 - Exit");
-        System.out.println("----------------------------------------------");
+        System.out.println("---------------------------------------");
         System.out.print("Enter choice (0-4): ");
 
         menuSelection();
@@ -184,7 +184,7 @@ public class UserInterface {
         for (String questionKey : tenQuestions) {
 
             System.out.println();
-            System.out.println("-------------------------------------");
+            System.out.println("---------------------------------------");
             System.out.println("Question " + (questionNumber++) + " of " + tenQuestions.size());
 
             // Get the data for this specific question
@@ -291,11 +291,10 @@ public class UserInterface {
 
     public void displayEnd(int score, int totalQuestions) {
         System.out.println();
-        System.out.println("=====================================");
+        System.out.println("---------------------------------------");
         System.out.println("Quiz complete!");
         displayScore(score, totalQuestions);
-        System.out.println("=====================================");
-
+        System.out.println("---------------------------------------");
 
         displayChunkSelection();
     }
