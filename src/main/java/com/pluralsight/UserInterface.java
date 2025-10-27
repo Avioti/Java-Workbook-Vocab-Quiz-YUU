@@ -43,7 +43,7 @@ public class UserInterface {
         System.out.println("|                                     |");
         System.out.println("+---------+---------+---------+-------+");
         System.out.println("----Test your Vocabulary Knowledge!!----");
-        System.out.println("-----------Daily quizzes!!--------------");
+        System.out.println("-----------Chapter quizzes!!--------------");
         System.out.println();
         System.out.print("Press Enter: ");
         scanner.nextLine();
