@@ -1,0 +1,20 @@
+What does inheritance primarily help avoid in object-oriented programming?|copying code|code duplication|debugging errors|encapsulation|code duplication
+Inheritance allows a class to reuse ______ from another class.|only methods|only variables|variables and methods|constructors|variables and methods
+The relationship between a child and a parent class is called a(n) ______ relationship.|Has-A|Is-A|Can-Do|Contains|Is-A
+In Java, which keyword is used to establish inheritance between two classes?|inherits|extends|implements|super|extends
+What term describes the class being inherited from?|base class|child class|subclass|extension class|base class
+Which Java access modifier allows subclasses to access members but hides them from outside classes?|private|protected|public|default|protected
+A subclass must call the parent class constructor using which keyword?|this|extends|super|parent|super
+When a child class provides its own version of an inherited method, it is called ______.|overloading|overriding|shadowing|duplicating|overriding
+The keyword used to explicitly override a parent method is ______.|@Overload|@Override|@Parent|@Method|@Override
+What does polymorphism literally mean?|one form|many forms|single change|dynamic method|many forms
+Which of the following best describes polymorphism?|Different classes sharing the same fields|A single action behaving differently based on object type|A method that never changes behavior|Data hiding through private fields|A single action behaving differently based on object type
+A variable of a base class can reference objects of which type?|only the base class|only the same class|any subclass|primitive types only|any subclass
+What happens if you try to assign a parent object to a child reference directly?|It always works|It depends on constructors|It causes a compile error|It executes polymorphically|It causes a compile error
+Which operator is used to safely check an object’s type before down casting?|cast|check|instanceof|super|instanceof
+An abstract class in Java cannot be ______.|extended|overridden|instantiated|referenced|instantiated
+Abstract classes can contain ______.|only abstract methods|only static methods|both abstract and concrete methods|constructors only|both abstract and concrete methods
+What must a subclass do when it extends an abstract class containing abstract methods?|Ignore them|Re-declare them as variables|Implement all abstract methods|Mark them as final|Implement all abstract methods
+Which concept is demonstrated when a method call is resolved at runtime instead of compile-time?|Encapsulation|Static binding|Dynamic binding|Aggregation|Dynamic binding
+What is the main difference between abstract classes and interfaces in this workbook’s context?|Interfaces allow constructors|Abstract classes allow multiple inheritance|Interfaces define “what,” abstract classes define “how”|Interfaces can be instantiated|Interfaces define “what,” abstract classes define “how”
+Which of the following most accurately summarizes the DRY principle mentioned in the inheritance section?|Don’t reuse your code|Duplicate results yearly|Don’t repeat yourself|Define reusable yields|Don’t repeat yourself
