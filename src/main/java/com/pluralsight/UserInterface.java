@@ -66,7 +66,7 @@ public class UserInterface {
         System.out.println("4 - Chapter " + workBookChapter + " Quiz");
         System.out.println("0 - Exit");
         System.out.println("----------------------------------------------");
-        System.out.print("Enter choice (0-3): ");
+        System.out.print("Enter choice (0-4): ");
 
         menuSelection();
 
