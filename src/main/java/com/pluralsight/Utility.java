@@ -51,10 +51,11 @@ public class Utility {
      */
 
     public static void gradualText(String text, int delay) {
+        // Print each character with a delay
         for (char c : text.toCharArray()) {
             System.out.print(c);
             try {
-                Thread.sleep(delay);
+                Thread.sleep(delay);// Delay in milliseconds
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
