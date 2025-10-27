@@ -17,7 +17,7 @@ What does the DRY Principle (“Don’t Repeat Yourself”) advocate for?|Hiding
 Bundling data and behavior while hiding internal details is called:|Abstraction|Inheritance|Polymorphism|Encapsulation|Encapsulation
 Which keyword indicates inheritance from a superclass?|implements|import|extends|try|extends
 File I/O (Input/Output) is the process of reading from or writing to:|The computer's RAM.|External files.|The CPU's registers.|The console only.|External files.
-A Function (Methois a block of reusable code that performs what?|Defines an object's blueprint.|Performs a specific task.|Stores a value into a variable.|Hides internal details.|Performs a specific task.
+A Function (Method is a block of reusable code that performs what?|Defines an object's blueprint.|Performs a specific task.|Stores a value into a variable.|Hides internal details.|Performs a specific task.
 Getter / Setter methods are used to control access to:|Public methods.|Private fields.|Class names.|Packages.|Private fields.
 GitHub is a cloud-based service used for hosting what?|Java bytecode|Git repositories|Unit tests|Compiled JAR files|Git repositories
 What does IDE (Integrated Development Environment) combine?|CPU and RAM|Editor, compiler, and debugger tools|Source code and bytecode|Git and GitHub|Editor, compiler, and debugger tools
