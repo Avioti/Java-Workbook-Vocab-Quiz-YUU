@@ -46,9 +46,9 @@ public class UserInterface {
         System.out.println("1 - Easy");
         System.out.println("2 - Medium");
         System.out.println("3 - Hard");
-        System.out.println("4 - Exit");
+        System.out.println("0 - Exit");
         System.out.println("----------------------------------------------");
-        System.out.print("Enter choice (1-3): ");
+        System.out.print("Enter choice (0-3): ");
 
         menuSelection();
 
@@ -71,7 +71,7 @@ public class UserInterface {
         // Loop until valid input is received
 
         while (choosing) {
-            if (!ifNumber(option)) {
+            if (!ifNumber(option.trim())) {
                 System.out.print("Invalid input. Please enter a number between 1 and 4: ");
                 option = scanner.nextLine();
             } else {
@@ -81,33 +81,36 @@ public class UserInterface {
             }
         }
 
-        int choice = Integer.parseInt(option);
+        int choice = Integer.parseInt(option.trim());
 
         // Load corresponding quiz data
         switch (choice) {
             case 1:
                 // Easy selected
+                System.out.println();
                 System.out.println("You selected Easy");
                 QuizData.loadData("easy");
-                startQuiz();
+                confirmation("easy");
 
                 break;
             case 2:
                 // Medium selected
+                System.out.println();
                 System.out.println("You selected Medium");
                 QuizData.loadData("medium");
-                startQuiz();
+                confirmation("medium");
 
                 break;
             case 3:
                 // Hard selected
+                System.out.println();
                 System.out.println("You selected Hard");
                 QuizData.loadData("hard");
-                startQuiz();
+                confirmation("hard");
 
                 break;
 
-            case 4:
+            case 0:
                 // Exit selected
                 exit();
                 break;
@@ -120,7 +123,22 @@ public class UserInterface {
 
     }
 
+    /**
+     * Confirms the user's selected difficulty level before starting the quiz.
+     *
+     * @param difficulty The difficulty level selected by the user.
+     */
 
+    public void confirmation(String difficulty){
+        System.out.print(" Are you Sure? (Y/N): ");
+
+        if (scanner.nextLine().equalsIgnoreCase("y" )){
+            System.out.println("GOOD LUCK!");
+            startQuiz();
+        }else{
+            displayChunkSelection();
+        }
+    }
     /**
      * Starts the quiz by iterating through a set of questions,
      * collecting user answers, and calculating the final score.
@@ -140,7 +158,9 @@ public class UserInterface {
 
         // Loops through each question
         for (String questionKey : tenQuestions) {
-            System.out.println("\n-------------------------------------");
+
+            System.out.println();
+            System.out.println("-------------------------------------");
             System.out.println("Question " + (questionNumber++) + " of " + tenQuestions.size());
 
             // Get the data for this specific question
@@ -242,6 +262,7 @@ public class UserInterface {
 
     public void displayScore(int score, int totalQuestions) {
         System.out.println("Your final score: " + score + " out of " + totalQuestions);
+        System.out.println("Percentage: " + ((score * 100) / totalQuestions) + "%");
     }
 
     public void displayEnd(int score, int totalQuestions) {
