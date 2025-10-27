@@ -36,7 +36,7 @@ A Map is a collection storing:|Ordered lists.|Unique elements.|Key-value pairs.|
 A Method is essentially a Function defined inside a:|Package|Interface|Class|Library|Class
 The Motherboard is the main circuit board connecting all what?|Software applications.|Computer components.|Network cables.|External monitors.|Computer components.
 What is an Object?|A blueprint for a class.|An instance of a class.|A symbol that performs operations.|The definition of a field.|An instance of a class.
-A variable passed into a method is called a Parameter.|Argument|Field|Property|Parameter|Parameter
+A variable passed into a method is called a _________.|Argument|Field|Property|Parameter|Parameter
 What is Persistent Storage?|Memory that is cleared when power is lost.|Memory used by the CPU.|Storage that retains data when the computer is off.|Temporary storage in RAM.|Storage that retains data when the computer is off.
 Pull and Push are Git actions used to download or upload code changes, respectively.|Fetch/Commit|Clone/Branch|Merge/Rebase|Pull/Push|Pull/Push
 A Repository is a folder tracked by Git storing what?|Only the current version of the code.|The main class file.|Commit history.|External libraries.|Commit history.
