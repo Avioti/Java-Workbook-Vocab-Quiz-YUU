@@ -128,10 +128,10 @@ public class UserInterface {
 
                 break;
             case 4:
-                // Daily Quiz selected
+                // Chapter Quiz selected
                 System.out.println();
-                System.out.println("Daily Quiz selected");
-                QuizData.loadData("dailies");
+                System.out.println("Chapter Quiz selected");
+                QuizData.loadData("chapter");
                 confirmation();
 
             case 0:
