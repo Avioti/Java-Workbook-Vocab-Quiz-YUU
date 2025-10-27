@@ -1,16 +1,32 @@
 package com.pluralsight;
 
+
 import java.util.List;
 import java.util.Scanner;
 
 import static com.pluralsight.Utility.ifNumber;
-import static com.pluralsight.Utility.isNumber;
 
 public class UserInterface {
     private Scanner scanner;
+    private String workBookChapter;
+
+    //private ZonedDateTime currentDate;
+    //private String today;
 
     public UserInterface() {
         scanner = new Scanner(System.in);
+
+        workBookChapter = "5a";
+
+        /**
+         * Gets current date in MM/dd/yyyy format
+         * DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+         *Using ZonedDateTime to get current date (Was going to use this but settled for labeling them Chapter Quizzes)
+         * currentDate = ZonedDateTime.now();
+         * today = currentDate.format(formatter);
+         */
+
+
 
     }
 
@@ -23,10 +39,11 @@ public class UserInterface {
         System.out.println();
         System.out.println("+---------+---------+---------+-------+");
         System.out.println("|                                     |");
-        System.out.println("|     WELCOME TO THE QUIZ APP         |");
+        System.out.println("|     WELCOME TO THE YUU QUIZ APP     |");
         System.out.println("|                                     |");
         System.out.println("+---------+---------+---------+-------+");
-        System.out.println("Test your Vocabulary Knowledge!");
+        System.out.println("----Test your Vocabulary Knowledge!!----");
+        System.out.println("-----------Daily quizzes!!--------------");
         System.out.println();
         System.out.print("Press Enter: ");
         scanner.nextLine();
@@ -46,6 +63,7 @@ public class UserInterface {
         System.out.println("1 - Easy");
         System.out.println("2 - Medium");
         System.out.println("3 - Hard");
+        System.out.println("4 - Chapter " + workBookChapter + " Quiz");
         System.out.println("0 - Exit");
         System.out.println("----------------------------------------------");
         System.out.print("Enter choice (0-3): ");
@@ -90,7 +108,7 @@ public class UserInterface {
                 System.out.println();
                 System.out.println("You selected Easy");
                 QuizData.loadData("easy");
-                confirmation("easy");
+                confirmation();
 
                 break;
             case 2:
@@ -98,7 +116,7 @@ public class UserInterface {
                 System.out.println();
                 System.out.println("You selected Medium");
                 QuizData.loadData("medium");
-                confirmation("medium");
+                confirmation();
 
                 break;
             case 3:
@@ -106,9 +124,15 @@ public class UserInterface {
                 System.out.println();
                 System.out.println("You selected Hard");
                 QuizData.loadData("hard");
-                confirmation("hard");
+                confirmation();
 
                 break;
+            case 4:
+                // Daily Quiz selected
+                System.out.println();
+                System.out.println("Daily Quiz selected");
+                QuizData.loadData("dailies");
+                confirmation();
 
             case 0:
                 // Exit selected
@@ -125,20 +149,20 @@ public class UserInterface {
 
     /**
      * Confirms the user's selected difficulty level before starting the quiz.
-     *
-     * @param difficulty The difficulty level selected by the user.
      */
 
-    public void confirmation(String difficulty){
+    public void confirmation() {
         System.out.print(" Are you Sure? (Y/N): ");
+        String option = scanner.nextLine().trim().replaceAll("\\s+", "");
 
-        if (scanner.nextLine().equalsIgnoreCase("y" )){
+        if (option.equalsIgnoreCase("y") || option.equalsIgnoreCase("yes")) {
             System.out.println("GOOD LUCK!");
             startQuiz();
-        }else{
+        } else {
             displayChunkSelection();
         }
     }
+
     /**
      * Starts the quiz by iterating through a set of questions,
      * collecting user answers, and calculating the final score.
@@ -283,6 +307,7 @@ public class UserInterface {
     public static void exit() {
         System.out.println();
         System.out.println("Exiting the Quiz App. Goodbye!");
+
         System.exit(0);
     }
 

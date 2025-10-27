@@ -37,7 +37,6 @@ public class Utility {
             return true;
 
         } catch (Exception e) {
-            System.out.println("Error: Please enter a valid number.");
             return false;
 
         }
