@@ -42,16 +42,13 @@ public class Utility {
         }
     }
 
-    public static void isANumber(String str) {
-        try {
 
-            Integer.parseInt(str);
-
-        } catch (Exception e) {
-            System.out.println();
-
-            System.out.println("Error: Please enter a valid number.");
-        }}
+    /**
+     * Prints the given text to the console gradually, character by character,
+     * with a specified delay between each character.
+     * @param text  the text to print
+     * @param delay the delay in milliseconds between each character
+     */
 
     public static void gradualText(String text, int delay) {
         for (char c : text.toCharArray()) {
@@ -59,7 +56,7 @@ public class Utility {
             try {
                 Thread.sleep(delay);
             } catch (InterruptedException e) {
-                Thread.currentThread().interrupt();
+                e.printStackTrace();
             }
         }
         System.out.println();
