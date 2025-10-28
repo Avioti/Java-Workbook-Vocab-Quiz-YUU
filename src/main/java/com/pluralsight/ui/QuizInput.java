@@ -23,11 +23,8 @@ public class QuizInput extends Menu {
 
         List<String> tenQuestions = loadQA.getTenRandomQuestions();
 
-        // Check if there are enough questions
-        if (tenQuestions.isEmpty()) {
-            System.out.println("No questions available for the selected difficulty.");
-            return;
-        }
+        UiUtil.isEmptyCheck(tenQuestions);
+
         //  Initialize score and question counter
         int score = 0;
         int questionNumber = 1;

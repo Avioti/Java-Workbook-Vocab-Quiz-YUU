@@ -1,5 +1,7 @@
 package com.pluralsight.data;
 
+import com.pluralsight.ui.UiUtil;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.*;
@@ -19,11 +21,7 @@ public class readData {
 
     public static void loadData(String key) {
 
-        // Validate key
-        if (key.isBlank()) {
-            System.out.println("Cant Load invalid file name, loading easy by default");
-            key = "easy";
-        }
+        UiUtil.isEmptyCheck(key);
         // Clear previous data
         questions.clear();
         answers.clear();
