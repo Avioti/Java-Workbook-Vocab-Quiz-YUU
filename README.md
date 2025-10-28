@@ -60,6 +60,27 @@ Answer Check - Your chosen option text is compared against the correct answer te
 
 Quiz End - After the 10th question, the final score is calculated and displayed, and you are returned to the selection menu to try again or exit.
 
+## Installation Options
+
+1. **Download ZIP**
+   - Click the green "Code" button at the top of this repository
+   - Select "Download ZIP"
+   - Extract the ZIP file to your desired location
+
+2. **Clone the Repository**
+   ```bash
+   git clone https://github.com/Avioti/Java-Workbook-Vocab-Quiz-YUU.git
+   cd Java-Workbook-Vocab-Quiz-YUU
+   ```
+
+3. **Fork and Clone (For Contributors)**
+   - Click the "Fork" button at the top right of this repository
+   - Clone your forked repository:
+   ```bash
+   git clone https://github.com/YOUR-USERNAME/Java-Workbook-Vocab-Quiz-YUU.git
+   cd Java-Workbook-Vocab-Quiz-YUU
+   ```
+
 ## Data Storage
 All quiz data is loaded from CSV files based on the chosen difficulty (e.g., easy.csv). These files must reside in the src/main/resources/ directory.
 
