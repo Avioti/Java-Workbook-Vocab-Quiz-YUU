@@ -1,31 +1,51 @@
 Which term describes a method declared without a body, forcing subclasses to provide the implementation?|Abstract Class|Abstract Method|Abstraction|Artifact|Abstract Method
 Which type of array is resizable and part of the Java Collections Framework?|Array|ArrayList|Abstract Class|ATM|ArrayList
 BufferedReader / BufferedWriter are classes used for what task?|Reading user input from the console.|Efficiently reading or writing text files.|Creating threads for concurrent operations.|Handling network connections.|Efficiently reading or writing text files.
-The degree to which a class focuses on one clear purpose is called:|Coupling|Encapsulation|Cohesion|Abstraction|Cohesion
-Compilation is the process of translating source code into:|Source code again.|A JAR file.|Bytecode Java can run.|A machine language executable.|Bytecode Java can run.
-Customer / Contract are examples of domain objects used for:|Performing complex calculations.|Modeling real-world entities in projects.|Handling exceptions.|Managing source code.|Modeling real-world entities in projects.
+The degree to which a class focuses on one clear purpose is called|Coupling|Encapsulation|Cohesion|Abstraction|Cohesion
+Compilation is the process of translating source code into|Source code again.|A JAR file.|Bytecode Java can run.|A machine language executable.|Bytecode Java can run.
+Customer / Contract are examples of domain objects used for|Performing complex calculations.|Modeling real-world entities in projects.|Handling exceptions.|Managing source code.|Modeling real-world entities in projects.
 Debugging is the process of stepping through code to find and fix which kinds of errors?|Syntax errors only.|Logic or runtime errors.|Compilation errors only.|Hardware errors.|Logic or runtime errors.
 The DealershipFileManager in the car-dealership workshops performs what function?|Handles exceptions.|Reads/writes dealership data from a text file.|Creates a new Customer object.|Translates code into bytecode.|Reads/writes dealership data from a text file.
-An error that occurs at runtime and can be handled with try/catch is known as an:|Syntax Error|Compile Error|Exception|Logic Error|Exception
+An error that occurs at runtime and can be handled with try/catch is known as an|Syntax Error|Compile Error|Exception|Logic Error|Exception
 A for Loop is classified as what kind of loop?|Conditional loop|Counted loop|Infinite loop|Break loop|Counted loop
-The feature that allows classes and methods to work safely with different data types (e.g., List<String>) is called:|Inheritance|Encapsulation|Generics|Iteration|Generics
+The feature that allows classes and methods to work safely with different data types (e.g., List<String>) is called|Inheritance|Encapsulation|Generics|Iteration|Generics
 A HashMap is a key-value collection that allows for what kind of data access?|Sequential access|Thread-safe access|Quick lookups|Ordered insertion|Quick lookups
-The difference between HDD and SSD is that the latter is:|Mechanical.|Flash-based.|Volatile.|Used only for temporary memory.|Flash-based.
-Which keyword is used by a class to promise to fulfill the methods listed in an Interface?|extends|import|Implements|try|Implements
-A field belonging to a specific object is called an:|Static Variable|Field / Property|Instance Variable|Abstract Method|Instance Variable
-The Java Runtime Environment (JRE) is responsible for running:|Source code.|Compiled Java bytecode.|Unit tests.|External files.|Compiled Java bytecode.
-The JVM (Java Virtual Machine) executes:|Code before compilation.|Compiled Java programs.|Operating system commands.|SQL queries.|Compiled Java programs.
+The difference between HDD and SSD is that the latter is|Mechanical.|Flash-based.|Volatile.|Used only for temporary memory.|Flash-based.
+Which keyword is used by a class to promise to fulfill the methods listed in an Interface?|extends|import|implements|try|implements
+A field belonging to a specific object is called an|Static Variable|Field / Property|Instance Variable|Abstract Method|Instance Variable
+The Java Runtime Environment (JRE) is responsible for running|Source code.|Compiled Java bytecode.|Unit tests.|External files.|Compiled Java bytecode.
+The JVM (Java Virtual Machine) executes|Code before compilation.|Compiled Java programs.|Operating system commands.|SQL queries.|Compiled Java programs.
 Lambda Expressions provide compact syntax for defining what?|Classes|Interfaces|Small, single-method functions|Constructors|Small, single-method functions
 The Manifest File is metadata inside a JAR specifying what?|The compiler version.|All external dependencies.|The main class.|The author's name.|The main class.
 Maven is primarily used for Java build automation and what else?|Version control|Dependency management|Writing unit tests|Compiling bytecode|Dependency management
-Having multiple methods with the same name but different parameters is called:|Method Overriding|Method Overloading|Encapsulation|Abstraction|Method Overloading
-A subclass redefining a method from its parent class is called:|Method Overloading|Method Overriding|Casting|Parsing|Method Overriding
-Converting text to another data form (e.g., String → int) is:|Casting|Concatenation|Parsing|Compiling|Parsing
-The ability for one interface to represent many implementations is called:|Abstraction|Encapsulation|Inheritance|Polymorphism|Polymorphism
-Which visibility modifier allows a subclass access to a field or method?|private|public|Protected Access|Default|Protected Access
-An Error that happens while a program runs (after successful compilation) is a:|Syntax Error|Compile Error|Runtime Error|Logic Error|Runtime Error
+Having multiple methods with the same name but different parameters is called|Method Overriding|Method Overloading|Encapsulation|Abstraction|Method Overloading
+A subclass redefining a method from its parent class is called|Method Overloading|Method Overriding|Casting|Parsing|Method Overriding
+Converting text to another data form (e.g., String → int) is|Casting|Concatenation|Parsing|Compiling|Parsing
+The ability for one interface to represent many implementations is called|Abstraction|Encapsulation|Inheritance|Polymorphism|Polymorphism
+Which visibility modifier allows a subclass access to a field or method?|private|public|protected|default|protected
+An error that happens while a program runs (after successful compilation) is a|Syntax Error|Compile Error|Runtime Error|Logic Error|Runtime Error
 The SDLC (Software Development Life Cycle) refers to the stages of software creation, including planning, coding, testing, and what else?|Debugging|Documentation|Deployment|Inheritance|Deployment
-A Static Variable / Method belongs to:|A specific object instance.|The class itself, not instances.|The current package.|The superclass only.|The class itself, not instances.
+A Static Variable / Method belongs to|A specific object instance.|The class itself, not instances.|The current package.|The superclass only.|The class itself, not instances.
 The StringBuilder class is what type of class used for efficient string concatenation?|Immutable|Abstract|Mutable|Final|Mutable
 Try / Catch blocks are used to handle what gracefully?|Syntax errors.|Compilation errors.|Exceptions.|Logic errors.|Exceptions.
-Volatile Memory (like RAM) is cleared when power is:|Increased.|Stable.|Lost.|Initially applied.|Lost.
+Volatile Memory (like RAM) is cleared when power is|Increased.|Stable.|Lost.|Initially applied.|Lost.
+Which type of method must be defined by any class implementing an interface?|Abstract|Private|Static|Default|Abstract
+The 'implements' keyword is used when a class wants to|Inherit from a superclass.|Promise to follow an interface’s contract.|Override static methods.|Call the superclass constructor.|Promise to follow an interface’s contract.
+Interfaces can contain which of the following?|Only constants and abstract methods.|Instance fields and constructors.|Private variables only.|Concrete methods only.|Only constants and abstract methods.
+When two interfaces define the same default method, the implementing class must|Ignore both methods.|Override the conflicting method.|Delete one interface.|Use super to resolve.|Override the conflicting method.
+The Collections framework provides interfaces like List, Set, and Map to|Organize primitive data.|Store and manipulate groups of objects.|Compile bytecode.|Handle exceptions.|Store and manipulate groups of objects.
+A 'Generic' class allows|Defining methods that accept any primitive type.|Type-safe reuse of classes for different data types.|Automatic casting between incompatible types.|Faster runtime performance.|Type-safe reuse of classes for different data types.
+The diamond operator (<>) in Java generics is used to|Define arrays.|Simplify generic type declarations.|Call superclass constructors.|Cast between types.|Simplify generic type declarations.
+Streams in Java are designed to|Handle file input/output only.|Process data in a functional, pipeline-based way.|Compile Java code faster.|Manage threads for concurrency.|Process data in a functional, pipeline-based way.
+Which Stream method filters elements based on a condition?|map()|forEach()|filter()|collect()|filter()
+Lambda expressions are primarily used to|Declare packages.|Provide concise implementations of functional interfaces.|Create subclasses.|Handle checked exceptions.|Provide concise implementations of functional interfaces.
+A 'functional interface' in Java is one that|Contains exactly one abstract method.|Contains multiple static methods.|Is used only for collections.|Cannot be extended.|Contains exactly one abstract method.
+The 'map()' method in Java Streams is used to|Convert elements to new forms or types.|Remove duplicates from a stream.|Stop stream processing.|Sort data.|Convert elements to new forms or types.
+The 'reduce()' method in Java Streams is used to|Aggregate elements into a single result.|Convert elements to strings.|Remove null values.|Combine arrays.|Aggregate elements into a single result.
+An interface variable in Java is implicitly|private|public static final|protected|default|public static final
+In the context of Generics, 'T' is typically used to represent|A text file.|A type parameter.|A thread object.|A test case.|A type parameter.
+A class that extends an abstract class must|Be declared final.|Implement all abstract methods or remain abstract.|Implement only one method.|Avoid constructors.|Implement all abstract methods or remain abstract.
+The 'instanceof' operator is used to|Check object type at runtime.|Compare primitive values.|Compile class hierarchies.|Declare interfaces.|Check object type at runtime.
+Which Java package contains the core interfaces for Collections?|java.core|java.util|java.streams|java.collections|java.util
+The 'super' keyword can be used to|Call the superclass constructor or method.|Access private fields of any class.|Delete inherited fields.|Stop program execution.|Call the superclass constructor or method.
+What is the purpose of a 'default method' in an interface?|To provide an optional implementation for a method.|To force all classes to override it.|To make interfaces abstract.|To override constructors.|To provide an optional implementation for a method.

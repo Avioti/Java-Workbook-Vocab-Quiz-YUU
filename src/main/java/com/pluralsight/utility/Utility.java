@@ -1,4 +1,4 @@
-package com.pluralsight;
+package com.pluralsight.utility;
 
 public class Utility {
 
@@ -17,7 +17,6 @@ public class Utility {
             System.out.println();
 
             System.out.println("Error: Please enter a valid number.");
-
 
 
         }
@@ -46,6 +45,7 @@ public class Utility {
     /**
      * Prints the given text to the console gradually, character by character,
      * with a specified delay between each character.
+     *
      * @param text  the text to print
      * @param delay the delay in milliseconds between each character
      */

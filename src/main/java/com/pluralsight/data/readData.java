@@ -1,14 +1,14 @@
-package com.pluralsight;
+package com.pluralsight.data;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.*;
 
-public class QuizData {
+public class readData {
 
     // Data structures to hold questions and answers
-    private static HashMap<String, List<String>> questions = new HashMap<>();
-    private static HashMap<String, String> answers = new HashMap<>();
+    protected static HashMap<String, List<String>> questions = new HashMap<>();
+    protected static HashMap<String, String> answers = new HashMap<>();
 
 
     /**
@@ -72,55 +72,6 @@ public class QuizData {
 
     }
 
-    /**
-     * Loads questions from a CSV file based on the specified difficulty level.
-     * Prints out each question along with its answer options.
-     */
-
-    public static void loadQuestions(String difficulty) {
-
-        loadData(difficulty);
-        // Print out loaded questions for verification
-        for (String key : questions.keySet()) {
-            System.out.println("Question: " + key);
-            // Print options
-            List<String> options = questions.get(key);
-            for (int i = 0; i < options.size(); i++) {
-                System.out.println((i + 1) + ". " + options.get(i));
-            }
-
-        }
-    }
-
-    /**
-     * Returns a new, shuffled list of 10 question keys (the question text).
-     */
-    public static List<String> getTenRandomQuestions() {
-
-        // Get all question keys
-        List<String> allQuestionKeys = new ArrayList<>(questions.keySet());
-
-        // Shuffle the order of the questions
-        Collections.shuffle(allQuestionKeys);
-
-        // Get the first 10 (or fewer if the list is small)
-        int size = Math.min(10, allQuestionKeys.size());
-        // Return the sublist "SubList means get me a part of the list from index 0 to the size variable which is 10 or less"
-        return allQuestionKeys.subList(0, size);
-    }
-
-    /**
-     * Gets the shuffled options for a single question.
-     */
-    public static List<String> getShuffledOptions(String question) {
-
-        List<String> options = questions.get(question);
-
-        // Create a copy and shuffle it so we don't ruin the original
-        List<String> shuffled = new ArrayList<>(options);
-        Collections.shuffle(shuffled);
-        return shuffled;
-    }
 
     /**
      * Gets the correct answer text for a single question.

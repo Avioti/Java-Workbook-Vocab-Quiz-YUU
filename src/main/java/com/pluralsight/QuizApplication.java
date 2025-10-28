@@ -1,11 +1,13 @@
 package com.pluralsight;
 
 
-public class QuizApplication {
+import com.pluralsight.ui.QuizInput;
+
+public class QuizApplication extends QuizInput {
 
     public static void main(String[] args) {
-        QuizApplication app = new QuizApplication();
-        app.run();
+
+        run();
 
     }
 
@@ -13,12 +15,9 @@ public class QuizApplication {
      * Runs the Quiz Application by initializing the User Interface and displaying the welcome message.
      */
 
-    public void run() {
+    public static void run() {
 
-        UserInterface main = new UserInterface();
-
-        main.displayWelcome();
-
+        QuizInput.displayWelcome();
 
     }
 

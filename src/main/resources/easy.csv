@@ -1,39 +1,39 @@
 What is the concept of hiding unnecessary details to focus on what an object does?|Abstract Method|Algorithm|Abstraction|Assignment Operator (=)|Abstraction
 What does the Assignment Operator (=) do?|Compares two values.|Stores a value into a variable.|Exits a loop.|Converts a data type.|Stores a value into a variable.
-A fixed-size list that holds multiple values of the same type is called an:|ArrayList|Array|API|Artifact|Array
+A fixed-size list that holds multiple values of the same type is called an|ArrayList|Array|API|Artifact|Array
 What is the term for the compiled build output (like a JAR) produced by IntelliJ?|Algorithm|Source Code|Artifact|Bytecode|Artifact
 A Boolean data type has how many possible values?|Zero or one|True or false|Integer or double|An unlimited number|True or false
 What does the Break Statement immediately do?|Skips the current iteration of a loop.|Exits a loop or switch block.|Throws an exception.|Fixes a bug.|Exits a loop or switch block.
 What is an API (Application Programming Interface)?|The compiled output of a program.|A set of accessible methods or tools that let programs interact.|The process of finding errors in code.|A blueprint for an object.|A set of accessible methods or tools that let programs interact.
-Converting one data type into another (e.g., double → int) is called:|Compiling|Casting|Concatenation|Cohesion|Casting
-An interface for running programs that is purely text-based is the:|GUI|CLI (Command Line Interface)|CPU|CSV|CLI (Command Line Interface)
+Converting one data type into another (e.g., double → int) is called|Compiling|Casting|Concatenation|Cohesion|Casting
+An interface for running programs that is purely text-based is the|GUI|CLI (Command Line Interface)|CPU|CSV|CLI (Command Line Interface)
 What is a Class in Object-Oriented Programming?|An instance of an object.|Blueprint that defines an object’s structure (fields + methods).|A list of elements.|The process of joining strings.|Blueprint that defines an object’s structure (fields + methods).
-A saved change in Git representing a snapshot of your project is a:|Push|Pull|Commit|Rollback|Commit
+A saved change in Git representing a snapshot of your project is a|Push|Pull|Commit|Rollback|Commit
 Which special method is used to create and initialize an object?|Main Method|Constructor|Getter|Abstract Method|Constructor
 What is the CPU (Central Processing Unit) often called?|The computer's long-term memory.|The main circuit board.|The “brain” of the computer that executes instructions.|The display screen.|The “brain” of the computer that executes instructions.
-In CSV (Comma-Separated Values), how is data typically separated?|Tabs|Newlines|Commas or other delimiters|Spaces|Commas or other delimiters
+In CSV (_____-Separated Values), how is data typically separated?|Tabs|Newlines|Commas or other delimiters|Spaces|Commas or other delimiters
 Which term defines what kind of value a variable can store (e.g., int, String)?|Field|Property|Data Type|Exception|Data Type
 What does the DRY Principle (“Don’t Repeat Yourself”) advocate for?|Hiding internal details.|Writing reusable code instead of duplicating logic.|Handling runtime errors.|Defining fields in a class.|Writing reusable code instead of duplicating logic.
-Bundling data and behavior while hiding internal details is called:|Abstraction|Inheritance|Polymorphism|Encapsulation|Encapsulation
+Bundling data and behavior while hiding internal details is called|Abstraction|Inheritance|Polymorphism|Encapsulation|Encapsulation
 Which keyword indicates inheritance from a superclass?|implements|import|extends|try|extends
-File I/O (Input/Output) is the process of reading from or writing to:|The computer's RAM.|External files.|The CPU's registers.|The console only.|External files.
-A Function (Method is a block of reusable code that performs what?|Defines an object's blueprint.|Performs a specific task.|Stores a value into a variable.|Hides internal details.|Performs a specific task.
-Getter / Setter methods are used to control access to:|Public methods.|Private fields.|Class names.|Packages.|Private fields.
+File I/O (Input/Output) is the process of reading from or writing to|The computer's RAM.|External files.|The CPU's registers.|The console only.|External files.
+A Function (Method) is a block of reusable code that performs what?|Defines an object's blueprint.|Performs a specific task.|Stores a value into a variable.|Hides internal details.|Performs a specific task.
+Getter / Setter methods are used to control access to|Public methods.|Private fields.|Class names.|Packages.|Private fields.
 GitHub is a cloud-based service used for hosting what?|Java bytecode|Git repositories|Unit tests|Compiled JAR files|Git repositories
 What does IDE (Integrated Development Environment) combine?|CPU and RAM|Editor, compiler, and debugger tools|Source code and bytecode|Git and GitHub|Editor, compiler, and debugger tools
-if / else statements are classified as:|Looping structures.|Conditional statements that control program flow.|Exception handlers.|Data types.|Conditional statements that control program flow.
-The Import Statement allows access to:|Private fields.|Classes from other packages.|External files.|Protected methods.|Classes from other packages.
-The mechanism for creating new classes based on existing ones is:|Encapsulation|Abstraction|Inheritance|Polymorphism|Inheritance
-IntelliJ is the Java IDE used throughout the course.|NetBeans|Eclipse|Visual Studio|IntelliJ|IntelliJ
-Iteration is another term for:|Inheritance|Repetition of instructions via loops|Using an interface|Compiling code|Repetition of instructions via loops
+if / else statements are classified as|Looping structures.|Conditional statements that control program flow.|Exception handlers.|Data types.|Conditional statements that control program flow.
+The Import Statement allows access to|Private fields.|Classes from other packages.|External files.|Protected methods.|Classes from other packages.
+The mechanism for creating new classes based on existing ones is|Encapsulation|Abstraction|Inheritance|Polymorphism|Inheritance
+________ is the Java IDE used throughout the course.|NetBeans|Eclipse|Visual Studio|IntelliJ|IntelliJ
+Iteration is another term for|Inheritance|Repetition of instructions via loops|Using an interface|Compiling code|Repetition of instructions via loops
 Java is what kind of programming language?|Procedural|Object-Oriented|Functional|Scripting|Object-Oriented
 Which kit contains the compiler, libraries, and tools for Java development?|JRE|JVM|JDK (Java Developer Kit)|JAR|JDK (Java Developer Kit)
 What is a JAR (Java Archive)?|A text file containing all project dependencies.|A packaged, portable file containing compiled classes.|The main compiler executable.|A document detailing the code structure.|A packaged, portable file containing compiled classes.
-JUnit is a framework specifically for:|Build automation.|Debugging logic errors.|Writing and running unit tests.|Version control.|Writing and running unit tests.
+JUnit is a framework specifically for|Build automation.|Debugging logic errors.|Writing and running unit tests.|Version control.|Writing and running unit tests.
 The List Interface defines a collection that maintains order and allows duplicates.|Set|Map|Collection|List Interface|List Interface
-The program’s entry point, defined as public static void main(String args), is the:|Constructor|Main Method|Manifest File|Override Annotation|Main Method
-A Map is a collection storing:|Ordered lists.|Unique elements.|Key-value pairs.|Numerical sequences.|Key-value pairs.
-A Method is essentially a Function defined inside a:|Package|Interface|Class|Library|Class
+The program’s entry point, defined as public static void main(String args), is the|Constructor|Main Method|Manifest File|Override Annotation|Main Method
+A Map is a collection storing|Ordered lists.|Unique elements.|Key-value pairs.|Numerical sequences.|Key-value pairs.
+A Method is essentially a Function defined inside a|Package|Interface|Class|Library|Class
 The Motherboard is the main circuit board connecting all what?|Software applications.|Computer components.|Network cables.|External monitors.|Computer components.
 What is an Object?|A blueprint for a class.|An instance of a class.|A symbol that performs operations.|The definition of a field.|An instance of a class.
 A variable passed into a method is called a _________.|Argument|Field|Property|Parameter|Parameter
@@ -41,11 +41,31 @@ What is Persistent Storage?|Memory that is cleared when power is lost.|Memory us
 Pull and Push are Git actions used to download or upload code changes, respectively.|Fetch/Commit|Clone/Branch|Merge/Rebase|Pull/Push|Pull/Push
 A Repository is a folder tracked by Git storing what?|Only the current version of the code.|The main class file.|Commit history.|External libraries.|Commit history.
 Which class is commonly used to read user input from the keyboard?|BufferedReader|System.in|Scanner|InputStream|Scanner
-The part of code where a variable can be accessed is its:|Package|Domain|Scope|Stream|Scope
+The part of code where a variable can be accessed is its|Package|Domain|Scope|Stream|Scope
 A Setter is a method that performs what action on a private field?|Retrieves its value.|Declares it.|Assigns a value to it.|Destroys it.|Assigns a value to it.
-A String is a sequence of characters enclosed in:|Single quotes.|Double quotes.|Parentheses.|Brackets.|Double quotes.
+A String is a sequence of characters enclosed in|Single quotes.|Double quotes.|Parentheses.|Brackets.|Double quotes.
 A _____ Statement is a multi-branch conditional.|Only binary conditional|Looping structure|Exception handler|Switch Statement|Switch Statement
-A Syntax Error is a violation of:|Logic rules.|Runtime rules.|Programming grammar rules.|Version control rules.|Programming grammar rules.
-The way a user interacts with software is called the:|API|CLI|User Interface (UI)|JDK|User Interface (UI)
-A named container holding a value is a:|Constant|Object|Field|Variable|Variable
-Tracking and managing code changes over time is called:|Debugging|Compilation|Version Control|Iteration|Version Control
+A Syntax Error is a violation of|Logic rules.|Runtime rules.|Programming grammar rules.|Version control rules.|Programming grammar rules.
+The way a user interacts with software is called the|API|CLI|User Interface (UI)|JDK|User Interface (UI)
+A named container holding a value is a|Constant|Object|Field|Variable|Variable
+Tracking and managing code changes over time is called|Debugging|Compilation|Version Control|Iteration|Version Control
+In Object-Oriented Programming, the concept where a subclass reuses properties and methods from a parent class is called|Polymorphism|Encapsulation|Inheritance|Abstraction|Inheritance
+A class declared with the `abstract` keyword cannot be|Extended by another class|Instantiated directly|Used as a parent class|Overridden|Instantiated directly
+The relationship “A Car is-a Vehicle” represents which OOP concept?|Composition|Abstraction|Inheritance|Encapsulation|Inheritance
+The relationship “A Dealership has-a Vehicle List” represents which OOP concept?|Encapsulation|Aggregation|Abstraction|Inheritance|Aggregation
+Which keyword in Java allows a subclass to call its superclass constructor?|this|super|extends|parent|super
+The term “Polymorphism” means|One class can have multiple parents|An object can take many forms depending on context|Variables store multiple values|A method can exist without a body|An object can take many forms depending on context
+When two or more methods have the same name but different parameter lists, it’s called|Overriding|Overloading|Shadowing|Casting|Overloading
+When a subclass provides a new implementation for a method defined in its parent class, it’s called|Overloading|Overriding|Shadowing|Extending|Overriding
+Which access modifier allows visibility only to subclasses and same-package classes?|private|protected|public|default|protected
+What is the superclass of all classes in Java?|Object|Main|Super|Base|Object
+Which annotation helps ensure a method correctly overrides a superclass method?|@Deprecated|@Test|@Override|@Super|@Override
+An abstract method must|Have a body|Be declared final|Be declared inside an abstract class|Be static|Be declared inside an abstract class
+The process of converting a subclass object into a superclass reference is called|Casting up|Downcasting|Polymorphism|Abstraction|Casting up
+A class that defines a set of method signatures without implementations is called a/an|Interface|Abstract Class|Object|Wrapper|Interface
+Which Java keyword allows a class to inherit from a parent class?|inherit|include|extends|super|extends
+Interfaces in Java support what kind of inheritance model?|Multiple inheritance of implementation|Single inheritance of state|Multiple inheritance of type|No inheritance|Multiple inheritance of type
+Which concept ensures that an object’s internal state is hidden from outside interference?|Abstraction|Polymorphism|Encapsulation|Inheritance|Encapsulation
+Constructors in Java are primarily used to|Declare variables|Create and initialize objects|Override methods|Import packages|Create and initialize objects
+What is the purpose of the super() call in a constructor?|To call another constructor in the same class|To call a constructor in the superclass|To import the superclass fields|To return a superclass object|To call a constructor in the superclass
+Which principle is violated when identical code is repeated across multiple classes?|KISS|DRY|SOLID|OOP|DRY
