@@ -1,8 +1,6 @@
 package com.pluralsight.ui;
 
 
-import com.pluralsight.data.loadQA;
-import com.pluralsight.data.loadQA;
 
 import java.util.List;
 import java.util.Scanner;
@@ -21,7 +19,7 @@ public class QuizInput extends Menu {
      */
     public static void startQuiz() {
 
-        List<String> tenQuestions = loadQA.getTenRandomQuestions();
+        List<String> tenQuestions = QuizInput.getTenRandomQuestions();
 
         UiUtil.isEmptyCheck(tenQuestions);
 
@@ -37,8 +35,8 @@ public class QuizInput extends Menu {
             System.out.println("Question " + (questionNumber++) + " of " + tenQuestions.size());
 
             // Get the data for this specific question
-            List<String> options = loadQA.getShuffledOptions(questionKey);
-            String correctAnswer = loadQA.getCorrectAnswer(questionKey);
+            List<String> options = QuizInput.getShuffledOptions(questionKey);
+            String correctAnswer = QuizInput.getCorrectAnswer(questionKey);
 
             // Display the question and options
             // We pass the key and options to our helper method

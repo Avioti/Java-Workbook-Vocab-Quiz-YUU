@@ -1,12 +1,15 @@
 package com.pluralsight.ui;
 
+import com.pluralsight.data.loadQA;
+
+
 import static com.pluralsight.ui.UiUtil.choiceBlock;
 import static com.pluralsight.ui.UiUtil.exit;
 import static com.pluralsight.ui.QuizInput.*;
 import static com.pluralsight.utility.Utility.gradualText;
 import static com.pluralsight.utility.Utility.ifNumber;
 
-public class Menu {
+public class Menu extends loadQA {
 
 
     /**

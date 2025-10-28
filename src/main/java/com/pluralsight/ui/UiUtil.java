@@ -1,8 +1,6 @@
 package com.pluralsight.ui;
 
 
-import com.pluralsight.data.readData;
-
 import java.util.List;
 
 public class UiUtil extends QuizInput {
@@ -33,7 +31,7 @@ public class UiUtil extends QuizInput {
     public static void choiceBlock(String choice) {
         System.out.println();
         System.out.println("You selected the " + choice + " quiz.");
-        readData.loadData(choice);
+        QuizInput.loadData(choice);
         confirmation();
     }
 
