@@ -12,7 +12,7 @@ public class QuizApplication extends QuizInput {
     }
 
     /**
-     * Runs the Quiz Application by initializing the User Interface and displaying the welcome message.
+     * Runs the Quiz Application by calling the QuizInput class and displaying the welcome message.
      */
 
     public static void run() {
