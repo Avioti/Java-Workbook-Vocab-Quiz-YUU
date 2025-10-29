@@ -73,13 +73,9 @@ Quiz End - After the 10th question, the final score is calculated and displayed,
    cd Java-Workbook-Vocab-Quiz-YUU
    ```
 
-3. **Fork and Clone (For Contributors)**
+3. **Fork (For Contributors)**
    - Click the "Fork" button at the top right of this repository
-   - Clone your forked repository:
-   ```bash
-   git clone https://github.com/YOUR-USERNAME/Java-Workbook-Vocab-Quiz-YUU.git
-   cd Java-Workbook-Vocab-Quiz-YUU
-   ```
+ 
 
 ## Data Storage
 All quiz data is loaded from CSV files based on the chosen difficulty (e.g., easy.csv). These files must reside in the src/main/resources/ directory.
