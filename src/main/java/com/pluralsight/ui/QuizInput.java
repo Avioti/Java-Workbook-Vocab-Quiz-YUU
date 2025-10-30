@@ -9,8 +9,9 @@ import static com.pluralsight.ui.Messages.*;
 import static com.pluralsight.utility.Utility.ifNumber;
 
 public class QuizInput extends Menu {
-    protected static Scanner scanner = new Scanner(System.in);
-    protected static String workBookChapter = "5a";
+
+    protected static final Scanner scanner = new Scanner(System.in);
+    protected static final String workBookChapter = "5a";
 
 
     /**

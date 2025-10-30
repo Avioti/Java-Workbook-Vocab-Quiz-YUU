@@ -2,17 +2,21 @@ package com.pluralsight.ui;
 
 public class Messages extends QuizInput {
 
+    private static final String correctAnswerMsg = "Correct! Well done.";
+    private static final String incorrectAnswerMsg = "Incorrect. The correct answer was: ";
+    private static final String endMsg = "Quiz complete!";
+
 
     /**
      * Messages for the User.
      */
 
     public static void displayCorrectAnswerMessage() {
-        System.out.println("Correct! Well done.");
+        System.out.println(correctAnswerMsg);
     }
 
     public static void displayIncorrectAnswerMessage(String correctAnswer) {
-        System.out.println("Incorrect. The correct answer was: " + correctAnswer);
+        System.out.println( incorrectAnswerMsg + correctAnswer);
     }
 
 
@@ -24,7 +28,7 @@ public class Messages extends QuizInput {
     public static void displayEnd(int score, int totalQuestions) {
         System.out.println();
         System.out.println("-------------------------------------");
-        System.out.println("Quiz complete!");
+        System.out.println(endMsg);
         displayScore(score, totalQuestions);
         System.out.println("-------------------------------------");
 

@@ -11,6 +11,8 @@ import static com.pluralsight.utility.Utility.ifNumber;
 
 public class Menu extends loadQA {
 
+    private static final int fastDelay = 30;
+    private static final int slowDelay = 25;
 
     /**
      * Displays the welcome message to the user.
@@ -30,7 +32,7 @@ public class Menu extends loadQA {
         System.out.println(textBox);
         System.out.println();
         String enterText = "Press ENTER to continue...";
-        gradualText(enterText, 25);
+        gradualText(enterText, slowDelay);
         scanner.nextLine();
 
         displayChunkSelection();
@@ -51,16 +53,17 @@ public class Menu extends loadQA {
                         "3 - Hard\n" +
                         "4 - Chapter " + workBookChapter + " Quiz\n" +
                         "0 - Exit\n";
-        gradualText(choices, 25);
+        gradualText(choices, slowDelay);
         System.out.println("-------------------------------------");
         String enterChoice = "Enter choice (0-4): ";
-        gradualText(enterChoice, 30);
+        gradualText(enterChoice, fastDelay);
 
 
         menuSelection();
 
 
     }
+
 
     /**
      * Handles the user's menu selection for quiz difficulty.
@@ -73,6 +76,32 @@ public class Menu extends loadQA {
         String option = scanner.nextLine();
         // Validate input
 
+        loopChange(option);
+
+        int choice = Integer.parseInt(option.trim());
+
+        // Load corresponding quiz data
+        switch (choice) {
+            case 1 -> choiceBlock("easy");
+
+            case 2 -> choiceBlock("medium");
+
+            case 3 -> choiceBlock("hard");
+
+            case 4 ->  choiceBlock("chapter");
+
+            case 0 -> exit();
+
+            default -> {
+                System.out.println("Number Out of Bounds . Please select a valid option.") ;
+                displayChunkSelection();
+            }
+        }
+
+
+    }
+
+    public static void loopChange(String option){
         boolean choosing = true;
 
         // Loop until valid input is received
@@ -87,43 +116,6 @@ public class Menu extends loadQA {
                 continue;
             }
         }
-
-        int choice = Integer.parseInt(option.trim());
-
-        // Load corresponding quiz data
-        switch (choice) {
-            case 1:
-                // Easy selected
-                choiceBlock("easy");
-
-                break;
-            case 2:
-                // Medium selected
-                choiceBlock("medium");
-
-                break;
-            case 3:
-                // Hard selected
-                choiceBlock("hard");
-
-                break;
-            case 4:
-                // Chapter Quiz selected
-                choiceBlock("chapter");
-
-            case 0:
-                // Exit selected
-                exit();
-                break;
-
-            default:
-                // Invalid selection
-                System.out.println("Number Out of Bounds . Please select a valid option.");
-                displayChunkSelection();
-                break;
-        }
-
-
     }
 
 }

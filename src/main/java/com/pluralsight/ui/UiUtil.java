@@ -1,6 +1,7 @@
 package com.pluralsight.ui;
 
 
+import java.util.HashMap;
 import java.util.List;
 
 public class UiUtil extends QuizInput {
@@ -52,7 +53,6 @@ public class UiUtil extends QuizInput {
         // Check if there are enough questions
         if (key.isEmpty()) {
             System.out.println("No questions available for the selected difficulty.");
-            return;
         }
     }
 
@@ -60,9 +60,13 @@ public class UiUtil extends QuizInput {
         // Validate key
         if (key.isBlank()) {
             System.out.println("Cant Load invalid file name, loading easy by default");
-            return key = "easy";
+            key = "easy";
         }
         return key;
     }
+
+
+
+
 
 }
